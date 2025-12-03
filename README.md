@@ -32,12 +32,7 @@
 </ul>
 
 <pre>
-<code style="
-    background-color: #2c2c3e; 
-    color: #f8f8f2; 
-    padding: 2px 6px; 
-    border-radius: 4px; 
-    font-family: 'Fira Code', monospace;>
+<code>
 navigator.mediaDevices.getUserMedia({ audio: true })
   .then(stream => {
     console.log("Mic detected ✔");
