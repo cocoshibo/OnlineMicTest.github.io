@@ -1,4 +1,9 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MicFix README</title>
+  <style>
     body {
       background: #0d1117;
       color: #e5e5e5;
