@@ -1,86 +1,137 @@
-<h1 align="center">🎙️ MicFix — Fake Mic Repair Website</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>MicFix README</title>
+  <style>
+    body {
+      background: #0d1117;
+      color: #e5e5e5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
 
-<p align="center">
-  A joke/demo project that pretends to fix microphone issues.
-</p>
+    h1, h2, h3 {
+      color: #7dd3fc;
+    }
 
-<hr>
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
 
-<h2>🔗 Website Link</h2>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    /* Dark styled code blocks */
+    pre {
+      background-color: #1e1e2f;
+      color: #f8f8f2;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 16px 0;
+      border: 1px solid #2c2c3e;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    code {
+      background-color: #2c2c3e;
+      color: #f8f8f2;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎙️ MicFix</h1>
+<p>A fake web tool that pretends to fix microphone issues. For demo/portfolio use only.</p>
+
+<h2>🔗 Visit the Fake Website</h2>
 <p>
-  Visit the website here:<br>
-  <a href="/micfix.html" target="_blank">
-    https://example.com/micfix
-  </a>
+  <a href="/micfix.html" class="btn">Mic Fix</a>
 </p>
 
-<h2>🚀 What This (Pretends to) Do</h2>
+<h2>🚀 What It (Pretends to) Do</h2>
 <ul>
-  <li>Diagnoses your “broken” microphone</li>
-  <li>Lets you “reset” mic settings</li>
-  <li>Shows a surprise message on reset 😈</li>
-  <li>Works 100% offline in your browser</li>
-  <li>Contains 0% actual troubleshooting</li>
+  <li>Detects “microphone issues”</li>
+  <li>Resets mic settings (fake)</li>
+  <li>Shows a secret message on reset</li>
+  <li>100% browser-based</li>
+  <li>0% actually useful</li>
 </ul>
 
-<h2>🧰 How It Works (Spoiler: It Doesn’t)</h2>
+<h2>🧰 How It Works</h2>
 <ol>
-  <li>User clicks <code>Reset Mic Settings</code>.</li>
-  <li>JavaScript hides the main screen.</li>
-  <li>A very emotional message appears.</li>
+  <li>User clicks <code>Reset Mic Settings</code> button.</li>
+  <li>JavaScript hides main screen and shows a surprise message.</li>
 </ol>
 
-<h2>📂 Project Files</h2>
+<h2>📦 Tech Stack</h2>
 <ul>
-  <li><code>index.html</code> — Entire fake website (single page)</li>
-  <li><code>README.md</code> — This file</li>
+  <li>HTML / CSS / JavaScript</li>
+  <li>Web Audio API (demo snippet)</li>
 </ul>
 
-<h2>📦 Technology</h2>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript (like 5 lines)</li>
-</ul>
+<h3>Example: Local test snippet</h3>
+<pre><code>navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(stream =&gt; {
+    // Connect to audio analyzer here
+    console.log("Mic detected ✔");
+  })
+  .catch(err =&gt; {
+    console.error("Mic access error:", err);
+  });
+</code></pre>
 
-<pre style="
-    background-color: #1e1e2f; 
-    color: #f8f8f2; 
-    padding: 16px; 
-    border-radius: 8px; 
-    overflow-x: auto; 
-    font-family: 'Fira Code', 'Courier New', monospace; 
-    font-size: 14px; 
-    line-height: 1.5; 
-    margin: 16px 0; 
-    border: 1px solid #2c2c3e;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);><code>
-// Yes, this is the entire “logic”
-function showReset() {
-  document.getElementById("mainScreen").style.display = "none";
-  document.getElementById("resetScreen").style.display = "block";
-}
+<h3>Example Attribution (optional)</h3>
+<pre><code>MicFix — demo README
+copyright (c) 2025 MicFix Demo
+This demo is provided "as-is" for learning and prototyping.
 </code></pre>
 
 <h2>❓ FAQ</h2>
-<p><b>Does this fix microphones?</b><br>No 😂</p>
-
+<p><b>Does this fix microphones?</b><br>No 😄</p>
 <p><b>Is this a real support tool?</b><br>Absolutely not.</p>
-
-<p><b>Why does this exist?</b><br>Comedy, chaos, and HTML practice.</p>
+<p><b>Why does this exist?</b><br>For fun, chaos, and HTML practice.</p>
 
 <h2>🛡️ Disclaimer</h2>
-<p>
-This project is a joke. It does not fix, repair, or configure microphones.
-If you actually need help, use real tech support, not this thing.
-</p>
+<p>This project is a joke. It does not fix, repair, or configure microphones. Use real tech support for actual issues.</p>
 
 <h2>📜 License</h2>
-<p>
-MIT License. Use, copy, remix, troll-friendly.
-</p>
+<p>MIT License — reuse, copy, remix freely. Attribution appreciated but optional.</p>
 
-<footer align="center">
-  <br><br>
-  ✨ Thanks for visiting MicFix ✨
-</footer>
+<footer>✨ Thanks for checking out MicFix ✨</footer>
+
+</body>
+</html>
