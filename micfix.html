@@ -1,85 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>MicFix — Fake Mic Repair</title>
-  <style>
-    body {
-      background: #0d121c;
-      color: #e5e5e5;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+<h1 align="center">🎙️ MicFix — Fake Mic Repair Website</h1>
 
-    header {
-      background: #111827;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
+<p align="center">
+  A joke/demo project that pretends to fix microphone issues.
+</p>
 
-    main {
-      text-align: center;
-      padding: 60px 20px;
-    }
+<hr>
 
-    a.btn {
-      display: inline-block;
-      margin: 8px;
-      background: #3b82f6;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 18px;
-      cursor: pointer;
-    }
+<h2>🔗 Website Link</h2>
+<p>
+  Visit the fake website here:<br>
+  <a href="https://example.com/micfix" target="_blank">
+    https://example.com/micfix
+  </a>
+</p>
 
-    a.btn:hover {
-      background: #2563eb;
-    }
+<h2>🚀 What This (Pretends to) Do</h2>
+<ul>
+  <li>Diagnoses your “broken” microphone</li>
+  <li>Lets you “reset” mic settings</li>
+  <li>Shows a surprise message on reset 😈</li>
+  <li>Works 100% offline in your browser</li>
+  <li>Contains 0% actual troubleshooting</li>
+</ul>
 
-    /* Fake Reset Screen */
-    #resetScreen {
-      display: none;
-      height: 100vh;
-      width: 100vw;
-      background: black;
-      color: red;
-      font-size: 60px;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 200px;
-    }
-  </style>
-</head>
-<body>
+<h2>🧰 How It Works (Spoiler: It Doesn’t)</h2>
+<ol>
+  <li>User clicks <code>Reset Mic Settings</code>.</li>
+  <li>JavaScript hides the main screen.</li>
+  <li>A very emotional message appears.</li>
+</ol>
 
-<header>🎙️ MicFix</header>
+<h2>📂 Project Files</h2>
+<ul>
+  <li><code>index.html</code> — Entire fake website (single page)</li>
+  <li><code>README.md</code> — This file</li>
+</ul>
 
-<main id="mainScreen">
-  <h2>Welcome to MicFix</h2>
-  <p>This page pretends to fix your microphone issues.</p>
+<h2>📦 Technology</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript (like 5 lines)</li>
+</ul>
 
-  <!-- Fake “fix” button -->
-  <a class="btn" onclick="showReset()">Reset Mic Settings</a>
+<pre><code>
+// Yes, this is the entire “logic”
+function showReset() {
+  document.getElementById("mainScreen").style.display = "none";
+  document.getElementById("resetScreen").style.display = "block";
+}
+</code></pre>
 
-  <!-- Link to the README -->
+<h2>❓ FAQ</h2>
+<p><b>Does this fix microphones?</b><br>No 😂</p>
+
+<p><b>Is this a real support tool?</b><br>Absolutely not.</p>
+
+<p><b>Why does this exist?</b><br>Comedy, chaos, and HTML practice.</p>
+
+<h2>🛡️ Disclaimer</h2>
+<p>
+This project is a joke. It does not fix, repair, or configure microphones.
+If you actually need help, use real tech support, not this thing.
+</p>
+
+<h2>📜 License</h2>
+<p>
+MIT License. Use, copy, remix, troll-friendly.
+</p>
+
+<footer align="center">
   <br><br>
-  <a class="btn" href="README.md" target="_blank">View README</a>
-</main>
-
-<!-- Hidden page / Fake reset -->
-<div id="resetScreen">操你妈的</div>
-
-<script>
-  function showReset() {
-    document.getElementById("mainScreen").style.display = "none";
-    document.getElementById("resetScreen").style.display = "block";
-  }
-</script>
-
-</body>
-</html>
+  ✨ Thanks for visiting MicFix ✨
+</footer>
