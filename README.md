@@ -19,7 +19,7 @@
 
 <h2>🔗 Visit the Fake Website</h2>
 <p>
-  <a href="/micfix.html" class="btn" target="_blank>Mic Fix</a>
+  <a href="micfix.html" class="btn" target="_blank>Mic Fix</a>
 </p>
 
 <h2>🚀 What It (Pretends to) Do</h2>
