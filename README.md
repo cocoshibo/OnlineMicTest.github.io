@@ -5,72 +5,10 @@
   <title>MicFix README</title>
   <style>
     body {
-      background: #0d1117;
-      color: #e5e5e5;
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 20px;
-    }
-
-    h1, h2, h3 {
-      color: #7dd3fc;
-    }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Button */
-    .btn {
-      display: inline-block;
-      background: #3b82f6;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 8px 0;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-    }
-
-    /* Dark styled code blocks */
-    pre {
-      background-color: #1e1e2f;
-      color: #f8f8f2;
-      padding: 16px;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Fira Code', 'Courier New', monospace;
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 16px 0;
-      border: 1px solid #2c2c3e;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    code {
-      background-color: #2c2c3e;
-      color: #f8f8f2;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: 'Fira Code', 'Courier New', monospace;
-      font-size: 13px;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #9ca3af;
-      text-align: center;
     }
   </style>
 </head>
@@ -106,19 +44,7 @@
 </ul>
 
 <h3>Example: Local test snippet</h3>
-<pre style="
-    background-color: #1e1e2f; 
-    color: #f8f8f2; 
-    padding: 16px; 
-    border-radius: 8px; 
-    overflow-x: auto; 
-    font-family: 'Fira Code', 'Courier New', monospace; 
-    font-size: 14px; 
-    line-height: 1.5; 
-    margin: 16px 0; 
-    border: 1px solid #2c2c3e;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-"><code>navigator.mediaDevices.getUserMedia({ audio: true })
+<pre><code>navigator.mediaDevices.getUserMedia({ audio: true })
   .then(stream =&gt; {
     // Connect to audio analyzer here
     console.log("Mic detected ✔");
