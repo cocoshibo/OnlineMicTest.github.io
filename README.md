@@ -1,130 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MicFix README</title>
-  <style>
-    body {
-      background: #0d1117;
-      color: #e5e5e5;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-    }
+<h1 align="center">🎙️ MicFix</h1>
 
-    h1, h2, h3 {
-      color: #7dd3fc;
-    }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Button */
-    .btn {
-      display: inline-block;
-      background: #3b82f6;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 8px 0;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-    }
-
-    /* Code blocks */
-    pre, code {
-      background: #111827;
-      color: #f5f5f5;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-      font-family: "Courier New", monospace;
-      font-size: 14px;
-    }
-
-    pre {
-      margin: 10px 0;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #9ca3af;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-<h1>🎙️ MicFix</h1>
-<p>A fake web tool that pretends to fix microphone issues. For demo/portfolio use only.</p>
-
-<h2>🔗 Visit the Fake Website</h2>
-<p>
-  <a href="/micfix.html" class="btn">Mic Fix</a>
+<p align="center">
+  A fictional web tool that helps users diagnose and fix microphone issues.
+  <br>
+  <em>Demo project — not a real service.</em>
 </p>
 
-<h2>🚀 What It (Pretends to) Do</h2>
+<hr>
+
+<h2>🚀 Features</h2>
 <ul>
-  <li>Detects “microphone issues”</li>
-  <li>Resets mic settings (fake)</li>
-  <li>Shows a secret message on reset</li>
-  <li>100% browser-based</li>
-  <li>0% actually useful</li>
+  <li><b>Microphone Detection</b> — Lists available input devices.</li>
+  <li><b>Live Input Meter</b> — Visual bar display of mic volume.</li>
+  <li><b>Browser Permissions Tips</b> — Helps fix blocked mic access.</li>
+  <li><b>Local Processing</b> — No audio saved or transmitted.</li>
 </ul>
 
 <h2>🧰 How It Works</h2>
 <ol>
-  <li>User clicks <code>Reset Mic Settings</code> button.</li>
-  <li>JavaScript hides main screen and shows a surprise message.</li>
+  <li>User clicks <code>Check Microphone</code>.</li>
+  <li>The browser requests microphone permission via WebRTC.</li>
+  <li>Mic audio stream is analyzed locally with the Web Audio API.</li>
+  <li>UI gives suggestions if input is too low or unavailable.</li>
 </ol>
 
 <h2>📦 Tech Stack</h2>
 <ul>
-  <li>HTML / CSS / JavaScript</li>
-  <li>Web Audio API (demo snippet)</li>
+  <li>HTML + CSS + JavaScript</li>
+  <li>MediaDevices API</li>
+  <li>Web Audio API</li>
 </ul>
 
-<h3>Example: Local test snippet</h3>
-<pre><code>navigator.mediaDevices.getUserMedia({ audio: true })
-  .then(stream =&gt; {
-    // Connect to audio analyzer here
+<pre>
+<code>
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(stream => {
     console.log("Mic detected ✔");
   })
-  .catch(err =&gt; {
-    console.error("Mic access error:", err);
+  .catch(err => {
+    console.error("Problem accessing microphone:", err);
   });
-</code></pre>
+</code>
+</pre>
 
-<h3>Example Attribution (optional)</h3>
-<pre><code>MicFix — demo README
-copyright (c) 2025 MicFix Demo
-This demo is provided "as-is" for learning and prototyping.
-</code></pre>
+<h2>📝 Use Cases</h2>
+<ul>
+  <li>Streamers with a muted USB mic</li>
+  <li>Gamers with Discord voice issues</li>
+  <li>Students using Zoom/Google Meet</li>
+  <li>New laptop users with OS privacy restrictions</li>
+</ul>
 
 <h2>❓ FAQ</h2>
-<p><b>Does this fix microphones?</b><br>No 😄</p>
-<p><b>Is this a real support tool?</b><br>Absolutely not.</p>
-<p><b>Why does this exist?</b><br>For fun, chaos, and HTML practice.</p>
 
-<h2>🛡️ Disclaimer</h2>
-<p>This project is a joke. It does not fix, repair, or configure microphones. Use real tech support for actual issues.</p>
+<p><b>Does MicFix record my voice?</b><br>
+No. All audio streams stay in your browser and are never transmitted.</p>
+
+<p><b>My mic doesn't show — what do I do?</b><br>
+Check OS privacy settings:
+<br>🔹 Windows → Settings → Privacy → Microphone
+<br>🔹 macOS → System Settings → Privacy → Microphone
+<br>Then restart your browser.</p>
+
+<p><b>Is this a real product?</b><br>
+No — it’s a demonstration/portfolio project.</p>
+
+<h2>📧 Contact (Fake)</h2>
+<p>support@micfix.fake</p>
+
+<hr>
 
 <h2>📜 License</h2>
-<p>MIT License — reuse, copy, remix freely. Attribution appreciated but optional.</p>
+<p>
+MIT License — use, modify, or repurpose freely.
+<br>Attribution appreciated but not required.
+</p>
 
-<footer>✨ Thanks for checking out MicFix ✨</footer>
-
-</body>
-</html>
+<p align="center">✨ Thanks for checking out MicFix ✨</p>
