@@ -106,7 +106,19 @@
 </ul>
 
 <h3>Example: Local test snippet</h3>
-<pre><code>navigator.mediaDevices.getUserMedia({ audio: true })
+<pre style="
+    background-color: #1e1e2f; 
+    color: #f8f8f2; 
+    padding: 16px; 
+    border-radius: 8px; 
+    overflow-x: auto; 
+    font-family: 'Fira Code', 'Courier New', monospace; 
+    font-size: 14px; 
+    line-height: 1.5; 
+    margin: 16px 0; 
+    border: 1px solid #2c2c3e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+"><code>navigator.mediaDevices.getUserMedia({ audio: true })
   .then(stream =&gt; {
     // Connect to audio analyzer here
     console.log("Mic detected ✔");
